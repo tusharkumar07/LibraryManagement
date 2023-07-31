@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(148, 168, 168);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-left: -5em;
+}
+.container p{
+    color: 'black'
+}
+.base{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-top: 1em;
+    padding: 1em 9em;
+    background-color: rgb(235, 100, 50);
+}
+.base h5{
+    background-color: rgb(232, 109, 65);
+    color: white;
+}

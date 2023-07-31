@@ -1,0 +1,25 @@
+form input{
+    margin: 0em 0em 1em 5em;
+    width: 20em;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+}
+
+.main{
+    border: 1px solid black;
+    margin:2em 0em 0em 23em;
+    padding: 1em 0em 2em 5em;
+    background-color: 	#6495ed;
+    width: 40em;
+    height: 38em;
+}
+p{
+    font-weight: 500;
+    color: white;
+    margin: 0.5em 0em 0em 5em;
+}
+form button{
+    margin-left: 13em;
+}
+
