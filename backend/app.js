@@ -4,14 +4,40 @@ const mongoose=require('mongoose');
 const Table=require('./database/entry');
 const cors = require('cors')
 const bodyParser = require('body-parser')
+const nodemailer=require("nodemailer")
 app.use(cors());
 app.use(bodyParser.json())
+
 
 mongoose.connect('mongodb://localhost:27017/libraryManagement').then(()=>{
     console.log("Connected with DataBase");
 }).catch((err)=>{
     console.log(`Error in connecting Dtabase : ${err}`);
 })
+
+const sendMailInfo=async(mailData,date)=>{
+    let mailTrasport=await nodemailer.createTransport({
+        service:"gmail",
+        auth:{
+            user:"tusharpathania07@gmail.com",
+            pass:"mlocmszhsaxaapav"
+        }
+    })
+    let details={
+        from:"tusharkumar0510@gmail.com",
+        to:mailData,
+        subject:"Mail for Submission of Books",
+        html:`<p >Today is Your Last Date for Submission of Book that is Issued by you on ${date}</p>`
+    }
+    mailTrasport.sendMail(details,(err)=>{
+        if(err){
+            console.log(`Error in sendmail :${err}`)
+        }
+        else{
+            console.log("Mail sent successfully")
+        }
+    })
+}
 
 app.post('/entry',async(req,res)=>{
     try{
@@ -50,6 +76,18 @@ app.post("/removeData",async(req,res)=>{
         res.send(false);
         console.log(`Error in deleting entry from backend :${err}`);
     }
+})
+
+app.post("/sendMail",async(req,res)=>{
+    try{
+        console.log(req.body.email);
+        sendMailInfo(req.body.email,req.body.date);
+        res.send(true);
+    }catch(err){
+        console.log(`Error in mail from Backend : ${err}`);
+        res.send(flase)
+    }
+    
 })
 app.listen(5000,()=>{
     console.log("listening on port no 5000");

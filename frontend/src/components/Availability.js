@@ -1,6 +1,8 @@
+import Header from "./Header"
+
 const Availability=()=>{
-    return(<>
-        <h1>This is Availability Page</h1>
-    </>)
+    return(
+        <Header/>
+    )
 }
 export default Availability;

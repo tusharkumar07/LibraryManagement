@@ -1,0 +1,38 @@
+.CSE,.ECE,.IT{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 1em;
+}
+.CSE .cseMain{
+    border: 1px solid black;
+    margin: 0em 20em;
+    padding: 0.2em 0em;
+    background-color: #E0FFFF;
+}
+.ECE .eceMain{
+    border: 1px solid black;
+    margin: 2em 20em;
+    padding: 0.2em 0em;
+    background-color: #FAFAD2;
+}
+.IT .itMain{
+    border: 1px solid black;
+    margin: 2em 20em;
+    padding: 0.2em 0em;
+    background-color: #808080;
+}
+.sem1Maths,.sem1Elet,.sem1Chem,.sem1Linux,.sem1Biotech{
+    border: 1px solid black;
+    padding: 0.5em 0.5em;
+    background-color: #808080;
+}
+#sem1Img{
+    height: 20em;
+}
+.semester1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em 2em;
+}

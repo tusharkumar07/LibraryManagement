@@ -1,28 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(148, 168, 168);
-}
+
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2em;
-    margin-left: -5em;
+    margin-top: 3em;
 }
 .container p{
-    color: 'black'
+    color: 'black';
+    margin-right:10px ;
 }
 .base{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border: 1px solid black;
-    margin-top: 1em;
-    padding: 1em 9em;
+    margin-top: 2em;
+    height: 5em;
+    padding: 1em 3em 1em 1em;
     background-color: rgb(235, 100, 50);
 }
 .base h5{
     background-color: rgb(232, 109, 65);
     color: white;
+}
+.container p{
+    border: 1px solid black;
+    width: 160px;
+}
+.container .email{
+    width: 220px;
+}
+.container .delete{
+    position: absolute;
+    right: 10px;
+}
+.container .mail{
+    position: absolute;
+    right: 150px;
+}
+.base .lb1{
+    position: absolute;
+    left: 40px;
+}
+.base .lb2{
+    position: absolute;
+    left: 200px;
+}
+.base .lb3{
+    position: absolute;
+    left: 430px;
+}
+.base .lb4{
+    position: absolute;
+    left: 580px;
+}
+.base .lb5{
+    position: absolute;
+    left: 740px;
+}
+.base .lb6{
+    position: absolute;
+    right: 390px;
+}
+.base .lb7{
+    position: absolute;
+    right: 150px;
+}
+.base .lb8{
+    position: absolute;
+    right: 20px;
+}
+.container .lastDate{
+    position: absolute;
+    right: 320px;
+}
+.container .startDate{
+    position: absolute;
+    right: 480px;
+}
+.container .rollNo{
+    position: absolute;
+    right: 640px;
+}
+.container .bookId{
+    position: absolute;
+    right: 800px;
+}
+.container .email{
+    position: absolute;
+    left: 200px;
+}
+.container .name{
+    position: absolute;
+    left: 30px;
+}
+/* .container .fine{
+    position: absolute;
+    right: 150px;
+} */
+.back{
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+    width: 5em;
+}
+.today{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5em;
+}
+.currentDate{
+    margin-right: 2em;
 }

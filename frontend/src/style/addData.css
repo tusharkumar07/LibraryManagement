@@ -17,7 +17,7 @@ form input{
 p{
     font-weight: 500;
     color: white;
-    margin: 0.5em 0em 0em 5em;
+    margin: 0.5em 0em 0em 0em;
 }
 form button{
     margin-left: 13em;

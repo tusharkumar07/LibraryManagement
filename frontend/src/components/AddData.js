@@ -3,6 +3,7 @@ import '../style/addData.css';
 import React,{useState} from 'react';
 import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
+import Header from './Header';
 const AddData=()=>{
     const navigate=useNavigate();
     const [name,setName]=useState();
@@ -40,14 +41,12 @@ const AddData=()=>{
         }
         catch(err){
             console.log(`Error in sending post Data : ${err}`);
-        }
-        
+        }  
     }
-
     return (
-    <>
+    <>  <Header/>
         <div className='main'>
-        <h2>Enter the Information of Student</h2>
+        <h2>Admin Pannel to Issue Books</h2>
         <form>
         <p>Name :</p><input type="text" placeholder="Enter your Name" value={name} onChange={(val)=>{setName(val.target.value)}}/>
             <br></br>
@@ -61,7 +60,7 @@ const AddData=()=>{
             <br></br>
             <p>Last Date :</p><input type="date" value={lastDate} placeholder="Last Submission Date" className='date2' onChange={(val)=>{setLastDate(val.target.value)}}/> 
             <br></br>
-            <budtton className='btn btn-danger'  onClick={()=>data()}>Add</budtton>
+            <button className='btn btn-danger'  onClick={()=>data()}>Add</button>
         </form>
         </div>
        
