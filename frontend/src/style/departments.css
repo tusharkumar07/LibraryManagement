@@ -4,10 +4,10 @@
     text-align: center;
     margin-top: 1em;
 }
-.CSE .cseMain{
+.cseMain{
     border: 1px solid black;
-    margin: 0em 20em;
-    padding: 0.2em 0em;
+    margin: 2em 20em 1em 20em;
+    padding: 0.2em 4.5em;
     background-color: #E0FFFF;
 }
 .ECE .eceMain{
@@ -27,8 +27,24 @@
     padding: 0.5em 0.5em;
     background-color: #808080;
 }
-#sem1Img{
-    height: 20em;
+.CSE{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.semesters{
+    border: 1px solid black;
+    padding: 0em 0em 0.5em 0em;
+    width: 15em;
+    background-color: #d4cfcf;
+    margin: 1em 1em;
+}
+.semesters img{
+    width: 15em;
+    height: 19em;
+}
+.semData p{
+    color: black;
 }
 .semester1{
     display: flex;

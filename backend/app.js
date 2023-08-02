@@ -5,6 +5,7 @@ const Table=require('./database/entry');
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const nodemailer=require("nodemailer")
+const apiCse=require("./apiCse.json");
 app.use(cors());
 app.use(bodyParser.json())
 
@@ -86,8 +87,11 @@ app.post("/sendMail",async(req,res)=>{
     }catch(err){
         console.log(`Error in mail from Backend : ${err}`);
         res.send(flase)
-    }
-    
+    } 
+})
+
+app.get("/apiCse",(req,res)=>{
+    res.send(apiCse);
 })
 app.listen(5000,()=>{
     console.log("listening on port no 5000");

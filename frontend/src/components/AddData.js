@@ -14,14 +14,6 @@ const AddData=()=>{
     const [lastDate,setLastDate]=useState();
     const data=()=>{
         console.log(name,email,bookId,rollNo,startDate,lastDate);
-        swal({
-            icon: 'success',
-            title: 'Added!',
-            text: `${name} 's data has been Added.`,
-            showConfirmButton: false,
-            timer: 2000
-    });
-        try{
             axios.post("http://localhost:5000/entry",{
             iname:name,
             iemail:email,
@@ -31,17 +23,19 @@ const AddData=()=>{
             ilastDate:lastDate
         }).then((res)=>{
             if(res.data===true){
-                console.log(res.data);
-                navigate('/details');
+                swal({
+                    icon: 'success',
+                    title: 'Added!',
+                    text: `${name} 's data has been Added.`,
+                    showConfirmButton: false,
+                    timer: 2000
+            });
+                console.log(res.data); 
             }
         }).catch((err)=>{
             console.log(`Error in response :${err}`);
-        })
-            
-        }
-        catch(err){
-            console.log(`Error in sending post Data : ${err}`);
-        }  
+        })  
+        navigate('/details');
     }
     return (
     <>  <Header/>

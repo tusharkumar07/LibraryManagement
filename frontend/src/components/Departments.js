@@ -1,53 +1,46 @@
 
 import Header from './Header';
 import "../style/departments.css";
+import axios from "axios";
+import { useEffect, useState } from 'react';
 const Departments=()=>{
-    var x=5;
+    
+    const [cse,setCse]=useState([]);
+    useEffect(()=>{
+        axios.get("http://localhost:5000/apiCse").then((res)=>{
+            console.log(res.data);
+            setCse(res.data)
+        }).catch((err)=>{
+            console.log(err);
+        })
+    },[cse]);
+
     return(<>
         <Header />
+        <h4 className='cseMain'>CSE Departments</h4>
         <div className='CSE'>
-            <h4 className='cseMain'>This Is CSE Departments</h4>
-            <h5>Semester 1</h5>
-            <div className='semester1'>
-            <div className='sem1Maths'>
-                <img src='https://m.media-amazon.com/images/I/81WnSrp6DWL._AC_UF1000,1000_QL80_.jpg' className='sem1MathsImg' id='sem1Img' alt='Book Name'/>
-                <p>Fundamentals of Maths</p>
-                <p>Author : Ranjit Singh</p>
-                <p>Quantity : {x}</p>
-            </div>
-
-            <div className='sem1Elet'>
-                <img src='https://m.media-amazon.com/images/I/81WnSrp6DWL._AC_UF1000,1000_QL80_.jpg' className='sem1PhyImg' id='sem1Img' alt='Book Name'/>
-                <p>Basics of Electrical and Electronics</p>
-                <p>Author : Ranjit Singh</p>
-                <p>Quantity : {x}</p>
-            </div>
-
-            <div className='sem1Chem'>
-                <img src='https://m.media-amazon.com/images/I/81WnSrp6DWL._AC_UF1000,1000_QL80_.jpg' className='sem1ChemImg' id='sem1Img' alt='Book Name'/>
-                <p>Author : Ranjit Singh</p>
-                <p>Quantity : {x}</p>
-            </div>
-
-            <div className='sem1Biotech'>
-                <img src='https://m.media-amazon.com/images/I/81WnSrp6DWL._AC_UF1000,1000_QL80_.jpg' className='sem1ChemImg' id='sem1Img' alt='Book Name'/>
-                <p>Author : Ranjit Singh</p>
-                <p>Quantity : {x}</p>
-            </div>
-
-            <div className='sem1Linux'>
-                <img src='https://m.media-amazon.com/images/I/81WnSrp6DWL._AC_UF1000,1000_QL80_.jpg' className='sem1ChemImg' id='sem1Img' alt='Book Name'/>
-                <p>Author : Ranjit Singh</p>
-                <p>Quantity : {x}</p>
-            </div>
-            </div>
+            {
+                cse.map((item)=>{
+                    return(
+                    <div className='semesters'>
+                        <img src={item.img}/>
+                        <div className='semData'>
+                            <p className='course'>{item.course}</p>
+                            <p className='bookName'>Author : {item.author}</p>
+                            {/* <p className='bookName'>Book : {item.bookName}</p> */}
+                            <p className='semester'>Semester : {item.semester}</p>
+                        </div>
+                    </div>
+                    )
+                })
+            }
         </div>
-        <div className='ECE'>
+        {/* <div className='ECE'>
             <h4 className='eceMain'>This Is ECE Departments</h4>
         </div>
         <div className='IT'>
             <h4 className='itMain'>This Is IT Departments</h4>
-        </div>
+        </div> */}
     </>)
 }
 export default Departments;

@@ -1,0 +1,333 @@
+
+[
+    {
+        "id":1,
+        "course":"Engineering Mathematics",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Uaw706BE3PNlYNZzIkJ8MVlXGXxQAYFfug",
+        "author":"Ranjit Singh",
+        "semester":1,
+        "quantity":4,
+        "bookId":"MAC111",
+        "bookName":"Mathematics"
+    },
+    {
+        "id":2,
+        "course":"Engineering Chemistry",
+        "img":"https://m.media-amazon.com/images/I/81WnSrp6DWL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":1,
+        "quantity":4,
+        "bookId":"CYC102",
+        "bookName":"XYZ"
+    },
+    {
+        "id":3,
+        "course":"Basic Electrical and Electronics Engineering",
+        "img":"https://rukminim2.flixcart.com/image/850/1000/book/6/6/0/basic-electrical-and-electronics-engineering-original-imadnd8pewthsdhf.jpeg?q=20",
+        "author":"Ranjit Singh",
+        "semester":1,
+        "quantity":4,
+        "bookId":"EEC103",
+        "bookName":"Electrical"
+    },
+    {
+        "id":4,
+        "course":"Introduction to Biotechnology",
+        "img":"https://m.media-amazon.com/images/I/51j9NaIjqoL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":1,
+        "quantity":4,
+        "bookId":"BIC104 ",
+        "bookName":"Biotechnology"
+    },
+    {
+        "id":5,
+        "course":"Computer Workshop",
+        "img":"https://m.media-amazon.com/images/I/51T+vDkfRDL.jpg",
+        "author":"Ranjit Singh",
+        "semester":1,
+        "quantity":4,
+        "bookId":"CSL105",
+        "bookName":"Computer Workshop"
+    },
+    {
+        "id":6,
+        "course":"Probability and Random Process",
+        "img":"https://m.media-amazon.com/images/I/71xnDTKlDVL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":2,
+        "quantity":4,
+        "bookId":"MAC211",
+        "bookName":"Random Process"
+    },
+    {
+        "id":7,
+        "course":"Engineering Physics",
+        "img":"https://m.media-amazon.com/images/I/51yC0ZBWVWL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":2,
+        "quantity":4,
+        "bookId":"PHC202",
+        "bookName":"Physics"
+    },
+    {
+        "id":8,
+        "course":"Basics of Programming in C",
+        "img":"https://m.media-amazon.com/images/I/51HTieS6nkL.jpg",
+        "author":"Ranjit Singh",
+        "semester":2,
+        "quantity":4,
+        "bookId":"CSC203",
+        "bookName":"Programming in C"
+    },
+    {
+        "id":9,
+        "course":"Communication Skills",
+        "img":"https://m.media-amazon.com/images/I/51iXdWSyDSL.jpg",
+        "author":"Ranjit Singh",
+        "semester":2,
+        "quantity":4,
+        "bookId":"ENC204",
+        "bookName":"Communication Skills"
+    },
+    {
+        "id":10,
+        "course":"Basic Environmental Science and Engineering",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3b46zbhvo000NP61g1DHKfC4r28VsUaBHM8d_YQru7GFdX-5-ZP2rpvJ6KMwx_fqrDV8",
+        "author":"Ranjit Singh",
+        "semester":2,
+        "quantity":4,
+        "bookId":"EVC205",
+        "bookName":"Environmental Science"
+    },
+    {
+        "id":11,
+        "course":"Discrete Structures",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFKVKKd5TfTI7hE5B77QUcN4Dc_5-bbyDbZQ",
+        "author":"Ranjit Singh",
+        "semester":3,
+        "quantity":4,
+        "bookId":"CSC301",
+        "bookName":"Discrete Structures"
+    },
+    {
+        "id":12,
+        "course":"Data Structures and Algorithms",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFyMijq59i7cc43KJr0yWQkFlcGkPC75HAxg",
+        "author":"Ranjit Singh",
+        "semester":3,
+        "quantity":4,
+        "bookId":"CSC302 ",
+        "bookName":"Algorithms"
+    },
+    {
+        "id":13,
+        "course":"Computer Organization",
+        "img":"https://pictures.abebooks.com/isbn/9789381068311-us.jpg",
+        "author":"Ranjit Singh",
+        "semester":3,
+        "quantity":4,
+        "bookId":"CSC303",
+        "bookName":"Computer Organization"
+    },
+    {
+        "id":14,
+        "course":"Digital Systems Design",
+        "img":"https://m.media-amazon.com/images/I/51HcP5H185L._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":3,
+        "quantity":4,
+        "bookId":"CSC304",
+        "bookName":"Digital Systems"
+    },
+    {
+        "id":15,
+        "course":"Automata and Formal Languages",
+        "img":"https://m.media-amazon.com/images/I/91NrISfj-7L._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":3,
+        "quantity":4,
+        "bookId":"CSC305 ",
+        "bookName":"Automata"
+    },
+    {
+        "id":16,
+        "course":"Database Management Systems",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSedVdLr04l0ALJ2xUYpIx7PZE_i4QqEPlUmw",
+        "author":"Ranjit Singh",
+        "semester":4,
+        "quantity":4,
+        "bookId":"CSC401",
+        "bookName":"DBMS"
+    },
+    {
+        "id":17,
+        "course":"Design and Analysis of Algorithms",
+        "img":"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1515136510i/37831128.jpg",
+        "author":"Ranjit Singh",
+        "semester":4,
+        "quantity":4,
+        "bookId":"CSC402",
+        "bookName":"DAA"
+    },
+    {
+        "id":18,
+        "course":"Operating System",
+        "img":"https://m.media-amazon.com/images/I/51VIbTlUChL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":4,
+        "quantity":4,
+        "bookId":"CSC403",
+        "bookName":"OS"
+    },
+    {
+        "id":19,
+        "course":"Computer Networks",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHRV3gFlEXKyNu0f4EVDdgiOaUMo6UCFBvOg",
+        "author":"Ranjit Singh",
+        "semester":4,
+        "quantity":4,
+        "bookId":"CSC404",
+        "bookName":"CN"
+    },
+    {
+        "id":20,
+        "course":"Object Oriented Programming",
+        "img":"https://m.media-amazon.com/images/I/61yv+Lv7MmL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":4,
+        "quantity":4,
+        "bookId":"CSC405",
+        "bookName":"OOPS"
+    },
+    {
+        "id":21,
+        "course":"Software Engineering",
+        "img":"https://m.media-amazon.com/images/I/41AvdcSZh5L._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":5,
+        "quantity":4,
+        "bookId":"CSE401",
+        "bookName":"Software Engineering"
+    },
+    {
+        "id":22,
+        "course":"Software Maintenance",
+        "img":"https://m.media-amazon.com/images/I/71Hx4XDPGkL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":5,
+        "quantity":4,
+        "bookId":"CSE402",
+        "bookName":"SOftware Mainenance"
+    },
+    {
+        "id":23,
+        "course":"Mobile Applications Development",
+        "img":"https://cdn.shopify.com/s/files/1/0533/2089/files/app-development-books-modern-fullscript-development.jpg?v=1610640536",
+        "author":"Ranjit Singh",
+        "semester":5,
+        "quantity":4,
+        "bookId":"ITSE11",
+        "bookName":"Andriod"
+    },
+    {
+        "id":24,
+        "course":"Professional Communication and Soft Skills",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7KhTTd9wbKFx3J2TqMv29lejmXclNICKJkQ",
+        "author":"Ranjit Singh",
+        "semester":5,
+        "quantity":4,
+        "bookId":"ENL511",
+        "bookName":"Soft Skills"
+    },
+    {
+        "id":25,
+        "course":"Computational Tools and Techniques",
+        "img":"https://m.media-amazon.com/images/I/71-BVg1iGRL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":5,
+        "quantity":4,
+        "bookId":"CSL502 ",
+        "bookName":"Computational Tools"
+    },
+    {
+        "id":26,
+        "course":"Professional Ethics",
+        "img":"https://m.media-amazon.com/images/I/51VX5RSUz5L.jpg",
+        "author":"Ranjit Singh",
+        "semester":7,
+        "quantity":4,
+        "bookId":"HMC701",
+        "bookName":"Professional Ethics"
+    },
+    {
+        "id":27,
+        "course":"Advanced Computer Networks",
+        "img":"https://static.kopykitab.com/image/cache/data/nirali-prakashan/nir2250-300x380.jpg",
+        "author":"Ranjit Singh",
+        "semester":7,
+        "quantity":4,
+        "bookId":"CSE701",
+        "bookName":"Computer Networks"
+    },
+    {
+        "id":28,
+        "course":"Digital Image Processing",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ82c08oP2rcxjYy4k286cV5qbgMluo5q1uQ",
+        "author":"Ranjit Singh",
+        "semester":7,
+        "quantity":4,
+        "bookId":"CSE702",
+        "bookName":"Image processing"
+    },
+    {
+        "id":29,
+        "course":"Cloud Computing",
+        "img":"https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/590/9780367554590.jpg",
+        "author":"Ranjit Singh",
+        "semester":7,
+        "quantity":4,
+        "bookId":"ITSE12 ",
+        "bookName":"Cloud Computing"
+    },
+    {
+        "id":30,
+        "course":"Organizational Behavior",
+        "img":"https://m.media-amazon.com/images/I/918V6iRFRqL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":7,
+        "quantity":4,
+        "bookId":"HME731",
+        "bookName":"Organizational Behavior"
+    },
+    {
+        "id":31,
+        "course":"Internet of Things",
+        "img":"https://sumatosoft.com/wp-content/uploads/2022/03/622adb90821751033cc5e2db_JLXaeniqMqRyodp7jYajbLuQlxAe-JmX6jRRd8vHUlDBR4UgMWruI2rmP2NSfd8qhDJ7NTN_GLzQ9erN-BMUlO28BG-5zLZ1bAj7VNba6JdHrONk2AuHT_34eTG1PSnrDqb000uA.jpeg",
+        "author":"Ranjit Singh",
+        "semester":8,
+        "quantity":4,
+        "bookId":"ITSE13",
+        "bookName":"Internet"
+    },
+    {
+        "id":32,
+        "course":"Big Data Analytics",
+        "img":"https://m.media-amazon.com/images/I/51TJ7GH5UuL._AC_UF1000,1000_QL80_.jpg",
+        "author":"Ranjit Singh",
+        "semester":8,
+        "quantity":4,
+        "bookId":"ITSE14",
+        "bookName":"Data Analytics"
+    },
+    {
+        "id":33,
+        "course":"Computer Vision",
+        "img":"https://miro.medium.com/v2/resize:fit:1312/0*-y0N_grRHveG2Tz9.jpeg",
+        "author":"Ranjit Singh",
+        "semester":8,
+        "quantity":4,
+        "bookId":"ITSE15",
+        "bookName":"Computer Vision"
+    }
+]
