@@ -1,3 +1,67 @@
 .active-home{
     color: black;
 }
+.features{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3rem 5rem;
+}
+.branch{
+    text-align: center;
+}
+.branchBtn{
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+.tColor{
+    color: black;
+}
+.cardImg{
+    height: 35vh;
+}
+.cardConatiner:hover{
+    box-shadow: 5px 5px 20px rgba(14, 14, 14, 0.2); 
+}
+.containerHead{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0rem;
+    box-shadow: 5px 5px 20px rgba(14, 14, 14, 0.2);
+    background-color: #b2bec3; 
+}
+.headBenefits{
+    text-align: center;
+}
+.benefitContainer{
+    width: 30vw;
+}
+.headerColor{
+    background-color: #eb6432;
+    color: white;
+}
+.benefitsList{
+    padding-top: 1rem;
+}
+.benefitContainer:hover{
+    box-shadow: 5px 5px 20px rgba(14, 14, 14, 0.2); 
+}
+.logoImg{
+    width: 5vw;
+}
+.rules{
+    text-align: center;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footerContainer{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

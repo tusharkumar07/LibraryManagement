@@ -40,7 +40,7 @@ const AddData=()=>{
     return (
     <>  <Header/>
         <div className='main'>
-        <h2>Admin Pannel to Issue Books</h2>
+        <h2>Admin Panel to Issue Books</h2>
         <form>
         <p>Name :</p><input type="text" placeholder="Enter your Name" value={name} onChange={(val)=>{setName(val.target.value)}}/>
             <br></br>

@@ -8,7 +8,7 @@ const Departments=()=>{
     const [cse,setCse]=useState([]);
     useEffect(()=>{
         axios.get("http://localhost:5000/apiCse").then((res)=>{
-            console.log(res.data);
+            // console.log(res.data);
             setCse(res.data)
         }).catch((err)=>{
             console.log(err);

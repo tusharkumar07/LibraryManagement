@@ -1,12 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 import '../style/home.css';
+import logoImg from "../img/logoImg.png";
 const Header=(p)=>{   
     return(
     <>
      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <NavLink className="navbar-brand" to="/">LibroManage</NavLink>
+        <NavLink className="navbar-brand" to="/"><img src={logoImg} className='logoImg'/></NavLink>
         <button
           className="navbar-toggler"
           type="button"

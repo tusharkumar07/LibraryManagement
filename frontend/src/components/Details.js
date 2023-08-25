@@ -12,7 +12,7 @@ const Details = () => {
     try {
       axios.get("http://localhost:5000/details").then((res) => {
         setDetails(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       });
     } catch (err) {
       console.log(`Error in details page GET request : ${err}`);
@@ -102,9 +102,6 @@ const Details = () => {
               {item.lastDate}
             </p>
             
-            {/* <p key={item.id} className="fine" style={{color: 'black'}}>
-              {Math.floor(new Date()-new Date(item.lastDate) / (1000 * 60 * 60 * 24))}
-            </p> */}
             <button
               onClick={() => {
                 sendMail(item.email,item.startDate);
