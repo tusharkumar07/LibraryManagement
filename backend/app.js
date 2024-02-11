@@ -2,12 +2,16 @@ const express=require('express');
 const app=express();
 const mongoose=require('mongoose');
 const Table=require('./database/entry');
-const cors = require('cors')
-const bodyParser = require('body-parser')
-const nodemailer=require("nodemailer")
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const nodemailer=require("nodemailer");
 const apiCse=require("./apiCse.json");
 app.use(cors());
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+// require('dotenv').config();
+// const user_name = process.env.userName;
+// const app_pass = process.env.appPass;
+// const owener = process.env.Owner;
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/libraryManagement').then(()=>{
@@ -21,7 +25,7 @@ const sendMailInfo=async(mailData,date)=>{
         service:"gmail",
         auth:{
             user:"tusharpathania07@gmail.com",
-            pass:"mlocmszhsaxaapav"
+            pass:"pmmd exuk qiuu cnmj"
         }
     })
     let details={

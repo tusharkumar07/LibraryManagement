@@ -67,7 +67,7 @@ const Details = () => {
     <>
     <Header/>
     <div className="today">
-    <h4 className="currentDate">Current Date : {currentDate}</h4>
+    <h4 className="currentDate currentTime" style={{backgroundColor:"#1B4242"}}>Current Date : {currentDate}</h4>
     <h4 className="currentTime">Current Time : {currentTime}</h4>
     </div>
     <div className="base">

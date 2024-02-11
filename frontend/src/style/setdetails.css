@@ -9,10 +9,12 @@
     margin-right:10px ;
 }
 .base{
+    margin-left: 1rem;
+    margin-right: 1rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-    border: 1px solid black;
     margin-top: 2em;
     height: 5em;
     padding: 1em 3em 1em 1em;
@@ -111,4 +113,11 @@
 }
 .currentDate{
     margin-right: 2em;
+   
+}
+.currentTime{
+    background-color: #1B4242; 
+    padding: 7px 20px;
+    color: white;
+    border-radius: 5px;
 }

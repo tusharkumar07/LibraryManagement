@@ -9,7 +9,7 @@ const entrySchema=new mongoose.Schema({
         require:true,
     },
     bookId:{
-        type:Number,
+        type:String,
         require:true,
     },
     rollNo:{

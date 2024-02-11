@@ -1,18 +1,46 @@
 form input{
     margin: 0em 0em 1em 5em;
     width: 20em;
-    padding: 0.2em 0.5em 0.2em 0.5em;
-    border-radius: 0.5em;
-    border: 1px solid black;
+    padding:0.4em 0.5em;
+    border-radius: 2px;
+    border: none;  
+}
+input:focus {
+    outline: #6495ed;
+    border-color: #6495ed;
+  }
+
+  input[type="email"]:invalid {
+    border-color: red;
+  }
+  
+  input[type="email"]:invalid + span {
+    display: block;
+    color: red;
+  }
+  
+  
+.allData{
+   overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IssueBooks{
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    /* display: flex;
+    justify-content: center; */
 }
 
 .main{
-    border: 1px solid black;
-    margin:2em 0em 0em 23em;
+    border-radius: 10px;
+    margin: 2rem 0rem;
     padding: 1em 0em 2em 5em;
     background-color: 	#6495ed;
     width: 40em;
-    height: 38em;
+    height: auto
 }
 p{
     font-weight: 500;

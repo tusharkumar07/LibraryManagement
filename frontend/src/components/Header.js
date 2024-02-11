@@ -5,7 +5,7 @@ import logoImg from "../img/logoImg.png";
 const Header=(p)=>{   
     return(
     <>
-     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+     <nav className="navbar navbar-expand-lg" style={{backgroundColor:"#1B4242",color:"white"}}>
       <div className="container">
         <NavLink className="navbar-brand" to="/"><img src={logoImg} className='logoImg'/></NavLink>
         <button
@@ -21,17 +21,21 @@ const Header=(p)=>{
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
+            <li className="nav-item" >
+              <NavLink className="nav-link text-white" activeClassName="active" to="/details">Details</NavLink>
+            </li>
+            {/* <li className="nav-item">
+  <NavLink className="nav-link text-white" activeClassName="active text-black" to="/departments">Departments</NavLink>
+</li> */}
+
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/details">Details</NavLink>
+              <NavLink className="nav-link text-white"  activeClassName="active" to="/addData">New Entry</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/departments">Departments</NavLink>
+              <NavLink className="nav-link text-white" activeClassName="active" to="/availability">Availability</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/addData">New Entry</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/availability">Availability</NavLink>
+              <NavLink className="nav-link text-white" activeClassName="active" to="/issued">Issued</NavLink>
             </li>
           </ul>
         </div>

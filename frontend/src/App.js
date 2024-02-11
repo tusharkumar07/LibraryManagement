@@ -21,23 +21,23 @@ function App(){
         data3:"Data lose is less"
     }
     return (
-        <>
+        <div style={{backgroundColor:"#9EC8B9"}}>
         <Header />
-        <h3 className="containerHead">Departments In College</h3>
+        <h3 className="containerHead" style={{backgroundColor:'#43766C',color:"white"}}>Departments In College</h3>
         <div className="features">
         <HomeFeatures Branch="CSE" Tittle="Computer Science Engineering" img={imgCse} />
         <HomeFeatures Branch="ECE" Tittle="Electronics and Communication" img={imgEce}  />
         <HomeFeatures Branch="IT" Tittle="Information Technology" img={imgIt}  />
         </div>
 
-        <h3 className="containerHead">Benefits Of Library Automation System</h3>
+        <h3 className="containerHead" style={{backgroundColor:'#43766C',color:"white"}}>Benefits Of Library Automation System</h3>
         <div className="features">
             <HomeBenefits head="User-Friendly System" friendlySystem={friendlySystem}/>
             <HomeBenefits head="Easy-To_Manage" friendlySystem={easyManage}/>
         </div>
         <HomeRules/>
         <Footer/>
-        </>
+        </div>
     )
 }
 export default App;

@@ -27,7 +27,7 @@
         "author":"Ranjit Singh",
         "semester":1,
         "quantity":4,
-        "bookId":"EEC103",
+        "bookId":"103",
         "bookName":"Electrical"
     },
     {
@@ -37,7 +37,7 @@
         "author":"Ranjit Singh",
         "semester":1,
         "quantity":4,
-        "bookId":"BIC104",
+        "bookId":"104",
         "bookName":"Biotechnology"
     },
     {
@@ -47,7 +47,7 @@
         "author":"Ranjit Singh",
         "semester":1,
         "quantity":4,
-        "bookId":"CSL105",
+        "bookId":"105",
         "bookName":"Computer Workshop"
     },
     {

@@ -1,6 +1,7 @@
-.active-home{
-    color: black;
-}
+
+.nav-link.active {
+    color: red !important;
+  }
 .features{
     display: flex;
     flex-direction: row;
@@ -17,6 +18,9 @@
 }
 .tColor{
     color: black;
+}
+.colr{
+    color: white;
 }
 .cardImg{
     height: 35vh;
@@ -65,3 +69,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.nav-item {
+    margin-right: 20px; /* Adjust as needed */
+  }

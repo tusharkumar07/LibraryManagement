@@ -1,8 +1,9 @@
 .CSE,.ECE,.IT{
     width: 100%;
-    height: auto;
+    height: 100%;
     text-align: center;
-    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1rem;
 }
 .cseMain{
     border: 1px solid black;
@@ -29,22 +30,25 @@
 }
 .CSE{
     display: flex;
+    justify-content: center;
+    /* align-items: center; */
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 .semesters{
-    border: 1px solid black;
     padding: 0em 0em 0.5em 0em;
     width: 15em;
-    background-color: #d4cfcf;
+    background-color: #1B4242;
     margin: 1em 1em;
+    color: white;
 }
 .semesters img{
     width: 15em;
     height: 19em;
 }
 .semData p{
-    color: black;
+    color: white;
 }
 .semester1{
     display: flex;
