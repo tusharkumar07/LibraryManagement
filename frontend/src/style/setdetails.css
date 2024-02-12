@@ -2,7 +2,8 @@
 .container{
     display: flex;
     flex-direction: row;
-    margin-top: 3em;
+    margin-top: 2rem;
+    justify-content: space-between;
 }
 .container p{
     color: 'black';
@@ -13,92 +14,22 @@
     margin-right: 1rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 2em;
     height: 5em;
-    padding: 1em 3em 1em 1em;
+    padding: 1em 3em 1em 3em;
     background-color: rgb(235, 100, 50);
 }
 .base h5{
     background-color: rgb(232, 109, 65);
     color: white;
 }
-.container p{
-    border: 1px solid black;
-    width: 160px;
+.scrollBox{
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-.container .email{
-    width: 220px;
-}
-.container .delete{
-    position: absolute;
-    right: 10px;
-}
-.container .mail{
-    position: absolute;
-    right: 150px;
-}
-.base .lb1{
-    position: absolute;
-    left: 40px;
-}
-.base .lb2{
-    position: absolute;
-    left: 200px;
-}
-.base .lb3{
-    position: absolute;
-    left: 430px;
-}
-.base .lb4{
-    position: absolute;
-    left: 580px;
-}
-.base .lb5{
-    position: absolute;
-    left: 740px;
-}
-.base .lb6{
-    position: absolute;
-    right: 390px;
-}
-.base .lb7{
-    position: absolute;
-    right: 150px;
-}
-.base .lb8{
-    position: absolute;
-    right: 20px;
-}
-.container .lastDate{
-    position: absolute;
-    right: 320px;
-}
-.container .startDate{
-    position: absolute;
-    right: 480px;
-}
-.container .rollNo{
-    position: absolute;
-    right: 640px;
-}
-.container .bookId{
-    position: absolute;
-    right: 800px;
-}
-.container .email{
-    position: absolute;
-    left: 200px;
-}
-.container .name{
-    position: absolute;
-    left: 30px;
-}
-/* .container .fine{
-    position: absolute;
-    right: 150px;
-} */
+
 .back{
     position: absolute;
     right: 1em;
@@ -110,6 +41,8 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 1.5em;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .currentDate{
     margin-right: 2em;
@@ -121,3 +54,35 @@
     color: white;
     border-radius: 5px;
 }
+
+.margingT{
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .base{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+    height: 5em;
+    padding: 1rem 1rem;
+    background-color: rgb(235, 100, 50);
+
+    }
+    .base h5{
+        margin-right: 2.5rem;
+    }
+    .scrollBox{
+        overflow-x: scroll;
+        padding-bottom: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .today h4{
+        font-size: medium;
+    }
+  }
+  

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import "../style/setdetails.css";
 import Header from "./Header";
+import Footer from "./Footer";
 const Details = () => {
   const [details, setDetails] = useState([]);
   const [clk,setClk]=useState(false);
@@ -64,67 +65,50 @@ const Details = () => {
     })
   }
   return (
-    <>
+    <div style={{ backgroundColor: "#9EC8B9"}}>
     <Header/>
     <div className="today">
     <h4 className="currentDate currentTime" style={{backgroundColor:"#1B4242"}}>Current Date : {currentDate}</h4>
     <h4 className="currentTime">Current Time : {currentTime}</h4>
     </div>
-    <div className="base">
-        <h5 className='lb1'>Name</h5>
-        <h5 className='lb2'>Email</h5>
-        <h5 className='lb3'>Book Id</h5>
-        <h5 className='lb4'>Roll No</h5>
-        <h5 className='lb5'>Issue Date</h5>
-        <h5 className='lb6'>submit Date</h5>
-        <h5 className='lb7'>Send Mail</h5>
-        <h5 className='lb8'>submited</h5>
-    </div>
-      {details.map((item) =>{
-        return( 
-            <div className="container" style={{marginLeft:"0px"}}>
-            <p key={item.id} className="name" style={{color: 'black'}}>
-              {item.name}
-            </p>
-            <p key={item.id} className="email" style={{color: 'black'}}>
-              {item.email}
-            </p>
-            <p key={item.id} className="bookId" style={{color: 'black'}}>
-              {item.bookId}
-            </p>
-            <p key={item.id} className="rollNo" style={{color: 'black'}}>
-              {item.rollNo}
-            </p>
-            <p key={item.id} className="startDate" style={{color: 'black'}}>
-              {item.startDate}
-            </p>
-            <p key={item.id} className="lastDate" style={{color: 'black'}}>
-              {item.lastDate}
-            </p>
-            
-            <button
-              onClick={() => {
-                sendMail(item.email,item.startDate);
-              }}
-              className="btn btn-primary mail"
-              style={{height:'2em'}}
-            >
-              send
-            </button>
+    <div className="scrollBox">
+  <table className="table table-striped margingT">
+  <thead>
+  <tr>
+    <th className='lb1'>Name</th>
+    <th className='lb2'>Email</th>
+    <th className='lb3'>Book Id</th>
+    <th className='lb4'>Roll No</th>
+    <th className='lb5'>Issue Date</th>
+    <th className='lb6'>Submit Date</th>
+    <th className='lb7'>Remind</th>
+    <th className='lb7'>Remove</th>
+  </tr>
+</thead>
 
-            <button
-              onClick={() => {
-                removeEntry(item._id);
-              }}
-              className="btn btn-danger delete"
-              style={{height:'2em'}}
-            >
-              Delete
-            </button>
-          </div>
+    <tbody>
+      {details.map((item) => {
+        return (
+          <tr key={item.id}>
+            <td className="name" style={{ color: 'black' }}>{item.name}</td>
+            <td className="email" style={{ color: 'black' }}>{item.email}</td>
+            <td className="bookId" style={{ color: 'black' }}>{item.bookId}</td>
+            <td className="rollNo" style={{ color: 'black' }}>{item.rollNo}</td>
+            <td className="startDate" style={{ color: 'black' }}>{item.startDate}</td>
+            <td className="lastDate" style={{ color: 'black' }}>{item.lastDate}</td>
+            <td>
+              <button onClick={() => sendMail(item.email, item.startDate)} className="btn btn-primary mail" style={{ height: '2em' }}>Send</button>
+            </td>
+            <td><button onClick={() => removeEntry(item._id)} className="btn btn-danger delete" style={{ height: '2em' }}>Delete</button></td>
+          </tr>
         );
       })}
-    </>
+    </tbody>
+  </table>
+</div>
+<Footer/>
+    </div>
+    
   );
 };
 export default Details;

@@ -1,5 +1,6 @@
 import React from 'react'
-import "../style/home.css"
+import "../style/home.css";
+import { Link } from 'react-router-dom';
 
 export default function HomeFeatures(props) {
   return (
@@ -9,7 +10,7 @@ export default function HomeFeatures(props) {
   <div class="card-body">
     <h5 class="card-title branch">{props.Branch}</h5>
     <p class="card-text tColor">{props.Tittle}</p>
-    <a href="#" class="btn btn-primary branchBtn">View</a>
+    <Link to="/availability" class="btn btn-primary branchBtn px-3">View</Link>
   </div>
     </div>
     </>

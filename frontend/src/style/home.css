@@ -1,4 +1,10 @@
-
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
 .nav-link.active {
     color: red !important;
   }
@@ -72,3 +78,13 @@
 .nav-item {
     margin-right: 20px; /* Adjust as needed */
   }
+.footerData{
+    display: flex;;
+    justify-content: start;
+}
+
+@media (max-width: 768px) {
+    .logoImg{
+        width: 15vw;
+    }
+}

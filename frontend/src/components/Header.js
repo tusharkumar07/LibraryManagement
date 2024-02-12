@@ -24,10 +24,6 @@ const Header=(p)=>{
             <li className="nav-item" >
               <NavLink className="nav-link text-white" activeClassName="active" to="/details">Details</NavLink>
             </li>
-            {/* <li className="nav-item">
-  <NavLink className="nav-link text-white" activeClassName="active text-black" to="/departments">Departments</NavLink>
-</li> */}
-
             <li className="nav-item">
               <NavLink className="nav-link text-white"  activeClassName="active" to="/addData">New Entry</NavLink>
             </li>
@@ -41,25 +37,7 @@ const Header=(p)=>{
         </div>
       </div>
     </nav>
-     {/* <nav>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/details">Details</NavLink>
-        </li>
-        <li>
-          <NavLink to="/departments">Departments</NavLink>
-        </li>
-        <li>
-          <NavLink to="/addData">New Entry</NavLink>
-        </li>
-        <li>
-          <NavLink to="/availabiliity">Availability</NavLink>
-        </li>
-      </ul>
-    </nav> */}
+     
     </>
   );
 }
