@@ -1,7 +1,6 @@
 const express=require('express');
 const app=express();
 const mongoose=require('mongoose');
-const Table=require('./database/entry');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const nodemailer=require("nodemailer");
@@ -12,13 +11,14 @@ app.use(bodyParser.json());
 // const user_name = process.env.userName;
 // const app_pass = process.env.appPass;
 // const owener = process.env.Owner;
+const Table=require('./database/entry');
+// 'mongodb+srv://tusharkumar0510:MI4XsFcNiyuO6GIz@issuebooks.2xwsdza.mongodb.net/?retryWrites=true&w=majority'
 
-
-mongoose.connect('mongodb://127.0.0.1:27017/libraryManagement').then(()=>{
-    console.log("Connected with DataBase");
-}).catch((err)=>{
-    console.log(`Error in connecting Dtabase : ${err}`);
-})
+mongoose.connect('mongodb://127.0.0.1:27017/demolibrary').then(() => {
+    console.log("Connected with Database");
+}).catch((err) => {
+    console.log(`Error in connecting Database: ${err}`);
+});
 
 const sendMailInfo=async(mailData,date)=>{
     let mailTrasport=await nodemailer.createTransport({
