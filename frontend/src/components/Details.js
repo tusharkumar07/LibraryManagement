@@ -67,12 +67,17 @@ const Details = () => {
   return (
     <div style={{ backgroundColor: "#9EC8B9"}}>
     <Header/>
-    <div className="today">
+    {/* <div className="today">
     <h4 className="currentDate currentTime" style={{backgroundColor:"#1B4242"}}>Current Date : {currentDate}</h4>
     <h4 className="currentTime">Current Time : {currentTime}</h4>
+    </div> */}
+    <div className="imageSection">
+      <img src="https://cdn.pixabay.com/photo/2024/04/19/12/13/ai-generated-8706224_1280.png" className="imgSec"></img>
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/employee-working-in-admin-panel-10252672-8293826.png?f=webp" className="imgSec1"></img>
+      <img src="https://cdn.pixabay.com/photo/2024/04/19/12/13/ai-generated-8706226_1280.png" className="imgSec"></img>
     </div>
-    <div className="scrollBox">
-  <table className="table table-striped margingT">
+    <div className="scrollBox margingT">
+  <table className="table table-striped">
   <thead>
   <tr>
     <th className='lb1'>Name</th>

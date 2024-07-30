@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function HomeFeatures(props) {
   return (
     <>
-        <div class="card cardConatiner" style={{width: "18rem"}}>
+        <div class="card cardConatiner cardSize">
   <img class="card-img-top cardImg" src={props.img} alt="Card image cap" />
   <div class="card-body">
     <h5 class="card-title branch">{props.Branch}</h5>

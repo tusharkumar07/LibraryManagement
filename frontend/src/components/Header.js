@@ -22,6 +22,9 @@ const Header=(p)=>{
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item" >
+              <NavLink className="nav-link text-white" activeClassName="active" to="/">About</NavLink>
+            </li>
+            <li className="nav-item" >
               <NavLink className="nav-link text-white" activeClassName="active" to="/details">Details</NavLink>
             </li>
             <li className="nav-item">
@@ -30,9 +33,9 @@ const Header=(p)=>{
             <li className="nav-item">
               <NavLink className="nav-link text-white" activeClassName="active" to="/availability">Availability</NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav-link text-white" activeClassName="active" to="/issued">Issued</NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

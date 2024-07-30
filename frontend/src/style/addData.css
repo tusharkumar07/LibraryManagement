@@ -1,3 +1,6 @@
+.imgSize{
+  width: 38rem;
+}
 form input{
     margin: 1rem 1rem;
     width: 20em;
@@ -34,7 +37,7 @@ input:focus {
 }
 .IssueBooks{
     text-align: center;
-    margin-bottom: 2rem;
+    
 }
 
 .main{
@@ -86,6 +89,10 @@ p{
     background-color: 	#6495ed;
     width: 20rem;
     height: auto
+  }
+  .imgSize{
+    width: 80vw;
+    margin: auto;
   }
   .FormCenter{
     display: flex;

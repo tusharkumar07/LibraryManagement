@@ -80,8 +80,8 @@ const AddData = () => {
                 <Header />
                 <div className='allData' style={{ backgroundColor: "#9EC8B9" }}>
                     <div className='main2' style={{ backgroundColor: "#5C8374" }}>
-                        <h2 className='IssueBooks' style={{ color: "white" }}>Only Admin Can Access !</h2>
-                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/admin-control-panel-4487949-3722637.png" alt="Admin Control Panel" style={{ width:"40rem" }}/>
+                        <h2 className='IssueBooks' style={{ color: "white" }}>Admin Panel</h2>
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/admin-control-panel-4487949-3722637.png" alt="Admin Control Panel" className='imgSize'/>
                         <form onSubmit={handleLogin}>
                         <div className='formInside'>
                         <p>Password:</p>
@@ -106,7 +106,7 @@ const AddData = () => {
             <Header />
             <div className='allData' style={{ backgroundColor: "#9EC8B9" }}>
                 <div className='main' style={{ backgroundColor: "#5C8374" }}>
-                    <h2 className='IssueBooks' style={{ color: "white" }}>Library Service Counter !</h2>
+                    <h2 className='IssueBooks' style={{ color: "white" }}>Library Service Counter</h2>
                     <form className='FormCenter'>
                         <p>Enter your Name :</p><input type="text" placeholder="Name" value={name} onChange={(val) => setName(val.target.value)} />
                         {/* <br></br> */}

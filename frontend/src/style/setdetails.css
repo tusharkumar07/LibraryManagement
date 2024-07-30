@@ -1,3 +1,15 @@
+.imageSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20rem;
+}
+.imgSec{
+    width:25rem;
+}
+.imgSec1{
+    width:18rem;
+}
 
 .container{
     display: flex;
@@ -71,6 +83,22 @@
     padding: 1rem 1rem;
     background-color: rgb(235, 100, 50);
 
+    }
+    .imageSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .imgSec{
+        display: none;
+        width:80vw;
+    }
+    .imgSec1{
+        width:80vw;
+    }
+    .margingT{
+        margin-top: 0;
     }
     .base h5{
         margin-right: 2.5rem;
