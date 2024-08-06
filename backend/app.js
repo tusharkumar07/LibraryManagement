@@ -25,7 +25,7 @@ const sendMailInfo=async(mailData,date)=>{
         service:"gmail",
         auth:{
             user:"tusharpathania07@gmail.com",
-            pass:"pmmd exuk qiuu cnmj"
+            pass:app.pass.
         }
     })
     let details={
