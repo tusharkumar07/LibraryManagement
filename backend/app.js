@@ -98,6 +98,22 @@ app.post("/sendMail",async(req,res)=>{
     } 
 })
 
+// New route to get student details by roll number
+app.post("/getStudentByRollNo", async (req, res) => {
+    try {
+        const rollNo = req.body.rollNo;
+        const student = await Table.findOne({ rollNo: rollNo });
+        if (student) {
+            res.send(student);
+        } else {
+            res.status(404).send({ message: "Student not found" });
+        }
+    } catch (err) {
+        console.log(`Error in fetching student details by roll number: ${err}`);
+        res.status(500).send({ message: "Internal server error" });
+    }
+});
+
 app.get("/apiCse",(req,res)=>{
     res.send(apiCse);
 })
