@@ -66,6 +66,27 @@ Install my-project with npm
   cd backend -> nodemon app.js
 ```
 
+## Screenshots
+
+### Main Interface
+![Main Interface](./frontend/src/img/mainSection.png)
+
+
+### Admin login
+![Main Interface](./frontend/src/img/adminSection1.png)
+
+### Admin panel
+![Main Interface](./frontend/src/img/adminSection2.png)
+
+### Issued Books details
+![Main Interface](./frontend/src/img/issuedSection.png)
+
+### Available Books
+![Main Interface](./frontend/src/img/booksSection.png)
+
+### Responsive design
+![Main Interface](./frontend/src/img/responsive1.png)
+
 ## Authors
 
  [@Tushar Kumar](https://github.com/tusharkumar07)
