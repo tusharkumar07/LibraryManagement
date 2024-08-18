@@ -71,7 +71,6 @@ Install my-project with npm
 ### Main Interface
 ![Main Interface](./frontend/src/img/mainSection.png)
 
-
 ### Admin login
 ![Main Interface](./frontend/src/img/adminSection1.png)
 
@@ -80,6 +79,10 @@ Install my-project with npm
 
 ### Issued Books details
 ![Main Interface](./frontend/src/img/issuedSection.png)
+
+### Send Remainder
+![Main Interface](./frontend/src/img/mailSent.png)
+
 
 ### Available Books
 ![Main Interface](./frontend/src/img/booksSection.png)
