@@ -7,12 +7,8 @@ const nodemailer=require("nodemailer");
 const apiCse=require("./apiCse.json");
 app.use(cors());
 app.use(bodyParser.json());
-// require('dotenv').config();
-// const user_name = process.env.userName;
-// const app_pass = process.env.appPass;
-// const owener = process.env.Owner;
+require('dotenv').config();
 const Table=require('./database/entry');
-// 'mongodb+srv://tusharkumar0510:MI4XsFcNiyuO6GIz@issuebooks.2xwsdza.mongodb.net/?retryWrites=true&w=majority'
 
 mongoose.connect('mongodb://127.0.0.1:27017/demolibrary').then(() => {
     console.log("Connected with Database");
@@ -25,7 +21,7 @@ const sendMailInfo=async(mailData,date)=>{
         service:"gmail",
         auth:{
             user:"tusharpathania07@gmail.com",
-            pass:app.pass.
+            pass:process.env.EMAIL_APP_PASS
         }
     })
     let details={
