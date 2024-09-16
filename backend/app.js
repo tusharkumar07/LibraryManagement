@@ -7,7 +7,7 @@ const nodemailer=require("nodemailer");
 const apiCse=require("./apiCse.json");
 app.use(cors());
 app.use(bodyParser.json());
-require('dotenv').config();
+require('dotenv').config({ path: '../.env' });
 const Table=require('./database/entry');
 
 mongoose.connect('mongodb://127.0.0.1:27017/demolibrary').then(() => {
