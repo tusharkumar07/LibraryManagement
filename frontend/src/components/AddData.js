@@ -5,6 +5,7 @@ import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Footer from "./Footer";
+import adminPanelImage from '../img/admin-control-panel.png';
 
 const AddData = () => {
     const navigate = useNavigate();
@@ -81,7 +82,7 @@ const AddData = () => {
                 <div className='allData' style={{ backgroundColor: "#9EC8B9" }}>
                     <div className='main2' style={{ backgroundColor: "#5C8374" }}>
                         <h2 className='IssueBooks' style={{ color: "white" }}>Admin Panel</h2>
-                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/admin-control-panel-4487949-3722637.png" alt="Admin Control Panel" className='imgSize'/>
+                        <img src={adminPanelImage} alt="Admin Control Panel" className='imgSize'/>
                         <form onSubmit={handleLogin}>
                         <div className='formInside'>
                         <p>Password:</p>
