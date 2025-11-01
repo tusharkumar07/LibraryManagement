@@ -52,18 +52,29 @@ I have used Reacts, Express.js, Mongodb, Bootstrap in this project.
 
 Install my-project with npm
 
-```bash
-  cd frontend -> npm i .
-  cd backend -> npm i .
+```bash Run  1 command then press enter and similar for all other
+  cd frontend
+  npm i .
+  cd ..
+  cd backend
+  npm i .
+  cd ..
 ```
     
 ## To Run
 
 Install my-project with npm
 
-```bash
-  cd frontend -> npm start
-  cd backend -> nodemon app.js
+```bash Run these commands one by one
+  cd frontend
+  npm start
+
+```
+Open One More terminal to run Backend Simultaneously
+
+```bash Run these commands one by one
+  cd backend
+  nodemon app.js
 ```
 
 ## Screenshots
